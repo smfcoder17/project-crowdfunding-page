@@ -1,0 +1,46 @@
+:root {
+    --light-gray: hsl(0, 0%, 48%);
+    --lighter-gray: #F4F4F4;
+    --light-cyan: hsl(176, 50%, 47%);
+    --dark-cyan: hsl(176, 72%, 28%);
+}
+
+button, .btn, .btn-w-icon {
+    padding: 18px 20px;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    font-weight: 700;
+    position: relative;
+    color: var(--light-gray);
+    background: var(--lighter-gray);
+    cursor: pointer;
+}
+
+.btn-w-icon {
+    padding-left: 38px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+button > .btn-icon {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(-45%, -50%);
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: var(--light-cyan);
+}
+.btn-primary:active, .btn-primary:hover {
+    background-color: var(--dark-cyan);
+}
+
+p {
+    margin-block-start: .8em;
+    margin-block-end: .9em;
+}
+
+h2 { font-size: 1.3em; }
